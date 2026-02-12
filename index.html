@@ -6,151 +6,176 @@
 <title>SD Negeri Pati Lor 01</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
-    background: #f5f7fb;
-    color: #333;
-    scroll-behavior: smooth;
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f4f9ff;
+    color:#333;
+    scroll-behavior:smooth;
 }
 
-/* HEADER */
-header {
-    background: linear-gradient(135deg, #1565c0, #1e88e5);
-    color: white;
-    padding: 60px 20px;
-    text-align: center;
+/* HERO */
+.hero{
+    background:linear-gradient(135deg,#4facfe,#00f2fe);
+    color:white;
+    text-align:center;
+    padding:100px 20px 120px 20px;
+    position:relative;
 }
 
-header h1 {
-    font-size: 36px;
-    font-weight: 700;
+.hero h1{
+    font-size:40px;
+    font-weight:700;
 }
 
-header p {
-    margin-top: 10px;
-    font-size: 18px;
-    opacity: 0.9;
+.hero p{
+    margin-top:15px;
+    font-size:18px;
 }
 
-/* NAVBAR */
-nav {
-    background: white;
-    padding: 15px;
-    text-align: center;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 25px;
+    background:#ff9800;
+    color:white;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
 }
 
-nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #1565c0;
-    font-weight: 600;
+.btn:hover{
+    background:#f57c00;
 }
 
-nav a:hover {
-    color: #0d47a1;
+.wave{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+}
+
+/* NAV */
+nav{
+    background:white;
+    text-align:center;
+    padding:15px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.05);
+    position:sticky;
+    top:0;
+    z-index:999;
+}
+
+nav a{
+    margin:0 15px;
+    text-decoration:none;
+    font-weight:600;
+    color:#2196f3;
+}
+
+nav a:hover{
+    color:#0d47a1;
 }
 
 /* SECTION */
-section {
-    padding: 70px 20px;
+section{
+    padding:80px 20px;
 }
 
-.container {
-    max-width: 1100px;
-    margin: auto;
+.container{
+    max-width:1100px;
+    margin:auto;
 }
 
-h2 {
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 28px;
-    color: #1565c0;
+h2{
+    text-align:center;
+    margin-bottom:50px;
+    font-size:28px;
+}
+
+/* COLOR SECTIONS */
+.bg-light{
+    background:#ffffff;
+}
+
+.bg-blue{
+    background:#e3f2fd;
+}
+
+.bg-yellow{
+    background:#fff8e1;
 }
 
 /* CARD */
-.card {
-    background: white;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-    transition: 0.3s;
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.07);
+    transition:0.3s;
 }
 
-.card:hover {
-    transform: translateY(-5px);
+.card:hover{
+    transform:translateY(-8px);
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-/* BUTTON */
-.btn {
-    background: #1565c0;
-    color: white;
-    padding: 12px 20px;
-    border-radius: 30px;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 15px;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background: #0d47a1;
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
 }
 
 /* FORM */
-input, textarea {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 15px;
-    border-radius: 8px;
-    border: 1px solid #ddd;
-    font-family: inherit;
+input, textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border-radius:10px;
+    border:1px solid #ccc;
+    font-family:inherit;
 }
 
-button {
-    background: #1565c0;
-    color: white;
-    padding: 12px;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    font-weight: 600;
+button{
+    background:#2196f3;
+    color:white;
+    padding:12px;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:600;
 }
 
-button:hover {
-    background: #0d47a1;
+button:hover{
+    background:#0d47a1;
 }
 
 /* FOOTER */
-footer {
-    background: #0d47a1;
-    color: white;
-    text-align: center;
-    padding: 25px;
-    margin-top: 40px;
+footer{
+    background:#1565c0;
+    color:white;
+    text-align:center;
+    padding:30px;
 }
 
-/* RESPONSIVE */
+/* ICON STYLE */
+.icon{
+    font-size:30px;
+    margin-bottom:15px;
+    color:#2196f3;
+}
+
 @media(max-width:768px){
-    header h1 {
-        font-size: 26px;
+    .hero h1{
+        font-size:28px;
     }
 }
 </style>
@@ -158,66 +183,61 @@ footer {
 
 <body>
 
-<header>
-<h1>SD NEGERI PATI LOR 01</h1>
-<p>Mendidik Generasi Cerdas, Berkarakter, dan Berprestasi</p>
-<a href="#ppdb" class="btn">Daftar PPDB Sekarang</a>
-</header>
+<!-- HERO -->
+<div class="hero">
+    <h1>SD NEGERI PATI LOR 01</h1>
+    <p>Mewujudkan Generasi Cerdas, Kreatif, dan Berkarakter</p>
+    <a href="#ppdb" class="btn">Daftar PPDB Sekarang</a>
 
+    <svg class="wave" viewBox="0 0 1440 320">
+        <path fill="#ffffff" fill-opacity="1"
+        d="M0,224L80,197.3C160,171,320,117,480,106.7C640,96,800,128,960,165.3C1120,203,1280,245,1360,266.7L1440,288L1440,320L0,320Z"></path>
+    </svg>
+</div>
+
+<!-- NAV -->
 <nav>
-<a href="#profil">Profil</a>
-<a href="#guru">Guru</a>
-<a href="#galeri">Galeri</a>
-<a href="#berita">Berita</a>
-<a href="#ppdb">PPDB</a>
-<a href="#kontak">Kontak</a>
+    <a href="#profil">Profil</a>
+    <a href="#guru">Guru</a>
+    <a href="#berita">Berita</a>
+    <a href="#ppdb">PPDB</a>
+    <a href="#kontak">Kontak</a>
 </nav>
 
-<section id="profil">
+<!-- PROFIL -->
+<section id="profil" class="bg-light">
 <div class="container">
 <h2>Profil Sekolah</h2>
 <div class="card">
-<p><strong>Sejarah:</strong> SD Negeri Pati Lor 01 berdiri sejak tahun 1984 dan telah meluluskan ribuan siswa berprestasi.</p>
+<p><strong>Sejarah:</strong> Berdiri sejak 1984, SD Negeri Pati Lor 01 telah melahirkan generasi berprestasi.</p>
 <br>
-<p><strong>Visi:</strong> Menjadi sekolah unggul dalam prestasi dan karakter.</p>
+<p><strong>Visi:</strong> Unggul dalam prestasi dan karakter.</p>
 <br>
 <p><strong>Misi:</strong></p>
 <ul>
-<li>Meningkatkan kualitas pembelajaran</li>
-<li>Mengembangkan karakter siswa</li>
-<li>Meningkatkan kompetensi guru</li>
+<li>Meningkatkan mutu pembelajaran</li>
+<li>Membentuk karakter siswa</li>
+<li>Mengembangkan kompetensi guru</li>
 </ul>
 </div>
 </div>
 </section>
 
-<section id="guru">
+<!-- GURU -->
+<section id="guru" class="bg-blue">
 <div class="container">
 <h2>Guru & Staff</h2>
 <div class="grid">
-
-<div class="card"><h3>Iskak Widi Hardono, S.Pd.SD</h3><p>Kepala Sekolah</p></div>
-<div class="card"><h3>Murdiyatun, S.Pd</h3><p>Guru Kelas 1 A</p></div>
-<div class="card"><h3>Dias Astuti Cakrawati, S.Pd</h3><p>Guru Kelas 1 B</p></div>
-<div class="card"><h3>Ingti Binova Agomara, S.Pd</h3><p>Guru Kelas 2A</p></div>
-<div class="card"><h3>Aji Sandhi Nugroho, S.Pd</h3><p>Guru Kelas 2B</p></div>
-<div class="card"><h3>Rani Hermawati, S.Pd</h3><p>Guru Kelas 2C</p></div>
-<div class="card"><h3>Cahya Setiadi, S.Pd</h3><p>Guru Kelas 3A</p></div>
-<div class="card"><h3>Muhammad Ichsan A, S.Pd</h3><p>Guru Kelas 3B</p></div>
-<div class="card"><h3>Anggun Kurniawati, S.Pd</h3><p>Guru Kelas 3C</p></div>
-<div class="card"><h3>Puspa Sari Pertiwi, S.Pd</h3><p>Guru Kelas 4A</p></div>
-<div class="card"><h3>Arief Rachman Hakim, S.Pd</h3><p>Guru Kelas 4B</p></div>
-<div class="card"><h3>Yogi Widya Kusuma, S.Pd</h3><p>Guru Kelas 4C</p></div>
-<div class="card"><h3>Novi Dyah Indriyani, S.Pd</h3><p>Guru Kelas 5A</p></div>
-<div class="card"><h3>Deasy Kurniawati, S.Pd</h3><p>Guru Kelas 5B</p></div>
-<div class="card"><h3>Catur Rahayu Septyarini, S.Pd</h3><p>Guru Kelas 6A</p></div>
-<div class="card"><h3>Nuraini Dyah Ayu Yulianti, S.Pd</h3><p>Guru Kelas 6B</p></div>
-
+<div class="card"><div class="icon"><i class="fa-solid fa-user-tie"></i></div><h3>Iskak Widi Hardono, S.Pd.SD</h3><p>Kepala Sekolah</p></div>
+<div class="card"><div class="icon"><i class="fa-solid fa-chalkboard-teacher"></i></div><h3>Murdiyatun, S.Pd</h3><p>Guru Kelas 1A</p></div>
+<div class="card"><div class="icon"><i class="fa-solid fa-book"></i></div><h3>Dias Astuti Cakrawati, S.Pd</h3><p>Guru Kelas 1B</p></div>
+<div class="card"><div class="icon"><i class="fa-solid fa-graduation-cap"></i></div><h3>Ingti Binova Agomara, S.Pd</h3><p>Guru Kelas 2A</p></div>
 </div>
 </div>
 </section>
 
-<section id="berita">
+<!-- BERITA -->
+<section id="berita" class="bg-yellow">
 <div class="container">
 <h2>Berita Terbaru</h2>
 <div class="grid">
@@ -227,13 +247,14 @@ footer {
 </div>
 <div class="card">
 <h3>Lomba Sains</h3>
-<p>Siswa meraih juara tingkat kota dan membawa nama baik sekolah.</p>
+<p>Prestasi membanggakan di tingkat kota.</p>
 </div>
 </div>
 </div>
 </section>
 
-<section id="ppdb">
+<!-- PPDB -->
+<section id="ppdb" class="bg-light">
 <div class="container">
 <h2>PPDB Online</h2>
 <div class="card">
@@ -245,19 +266,18 @@ footer {
 <textarea placeholder="Alamat" required></textarea>
 <button type="submit">Kirim Pendaftaran</button>
 </form>
-<br>
-<a class="btn" href="#">Download Formulir PDF</a>
 </div>
 </div>
 </section>
 
-<section id="kontak">
+<!-- KONTAK -->
+<section id="kontak" class="bg-blue">
 <div class="container">
 <h2>Kontak Kami</h2>
 <div class="card">
-<p><strong>Alamat:</strong> Jl. RA Kartini No 22A Pati, Jawa Tengah</p>
-<p><strong>Email:</strong> patilorsijipaloji@gmail.com</p>
-<p><strong>Telepon:</strong> (0295) 383439</p>
+<p><i class="fa-solid fa-location-dot"></i> Jl. RA Kartini No 22A Pati</p>
+<p><i class="fa-solid fa-envelope"></i> patilorsijipaloji@gmail.com</p>
+<p><i class="fa-solid fa-phone"></i> (0295) 383439</p>
 <br>
 <a class="btn" href="https://wa.me/628123456789" target="_blank">Chat via WhatsApp</a>
 </div>
@@ -265,7 +285,7 @@ footer {
 </section>
 
 <footer>
-<p>&copy; 2026 SD Negeri Pati Lor 01 - All Rights Reserved</p>
+<p>&copy; 2026 SD Negeri Pati Lor 01 - Website Resmi</p>
 </footer>
 
 </body>
