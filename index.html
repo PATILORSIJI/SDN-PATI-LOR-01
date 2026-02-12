@@ -4,99 +4,153 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SD Negeri Pati Lor 01</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 <style>
-body {
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f4f8fb;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f5f7fb;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* HEADER */
 header {
-    background: #1e88e5;
+    background: linear-gradient(135deg, #1565c0, #1e88e5);
     color: white;
-    padding: 20px;
+    padding: 60px 20px;
     text-align: center;
 }
 
+header h1 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* NAVBAR */
 nav {
-    background: #1565c0;
-    padding: 10px;
+    background: white;
+    padding: 15px;
     text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav a {
-    color: white;
-    margin: 10px;
+    margin: 0 15px;
     text-decoration: none;
-    font-weight: bold;
+    color: #1565c0;
+    font-weight: 600;
 }
 
+nav a:hover {
+    color: #0d47a1;
+}
+
+/* SECTION */
 section {
-    padding: 40px 20px;
+    padding: 70px 20px;
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 1100px;
     margin: auto;
 }
 
 h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 28px;
     color: #1565c0;
 }
 
-.btn {
-    background: #1e88e5;
-    color: white;
-    padding: 10px 15px;
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
-    margin-top: 10px;
-}
-
+/* CARD */
 .card {
     background: white;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
 }
 
 .grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
 }
 
-.grid .card {
-    flex: 1 1 250px;
-}
-
-footer {
+/* BUTTON */
+.btn {
     background: #1565c0;
     color: white;
-    text-align: center;
-    padding: 15px;
+    padding: 12px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+    transition: 0.3s;
 }
 
+.btn:hover {
+    background: #0d47a1;
+}
+
+/* FORM */
 input, textarea {
     width: 100%;
-    padding: 8px;
-    margin: 5px 0 10px 0;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-family: inherit;
 }
 
 button {
-    background: #1e88e5;
+    background: #1565c0;
     color: white;
-    padding: 10px;
+    padding: 12px;
     border: none;
-    border-radius: 5px;
+    border-radius: 30px;
     cursor: pointer;
+    font-weight: 600;
 }
 
+button:hover {
+    background: #0d47a1;
+}
+
+/* FOOTER */
+footer {
+    background: #0d47a1;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+/* RESPONSIVE */
 @media(max-width:768px){
-    .grid{
-        flex-direction: column;
+    header h1 {
+        font-size: 26px;
     }
 }
 </style>
@@ -106,11 +160,11 @@ button {
 
 <header>
 <h1>SD NEGERI PATI LOR 01</h1>
-<p>Mendidik Generasi Cerdas dan Berakhlak Mulia</p>
+<p>Mendidik Generasi Cerdas, Berkarakter, dan Berprestasi</p>
+<a href="#ppdb" class="btn">Daftar PPDB Sekarang</a>
 </header>
 
 <nav>
-<a href="#beranda">Beranda</a>
 <a href="#profil">Profil</a>
 <a href="#guru">Guru</a>
 <a href="#galeri">Galeri</a>
@@ -119,19 +173,14 @@ button {
 <a href="#kontak">Kontak</a>
 </nav>
 
-<section id="beranda">
-<div class="container">
-<h2>Selamat Datang</h2>
-<p>Website resmi SD Negeri Pati Lor 01. Kami berkomitmen memberikan pendidikan terbaik untuk masa depan anak bangsa.</p>
-<a class="btn" href="#ppdb">Daftar PPDB Sekarang</a>
-</div>
-</section>
-
 <section id="profil">
 <div class="container">
 <h2>Profil Sekolah</h2>
+<div class="card">
 <p><strong>Sejarah:</strong> SD Negeri Pati Lor 01 berdiri sejak tahun 1984 dan telah meluluskan ribuan siswa berprestasi.</p>
+<br>
 <p><strong>Visi:</strong> Menjadi sekolah unggul dalam prestasi dan karakter.</p>
+<br>
 <p><strong>Misi:</strong></p>
 <ul>
 <li>Meningkatkan kualitas pembelajaran</li>
@@ -139,12 +188,14 @@ button {
 <li>Meningkatkan kompetensi guru</li>
 </ul>
 </div>
+</div>
 </section>
 
 <section id="guru">
 <div class="container">
 <h2>Guru & Staff</h2>
 <div class="grid">
+
 <div class="card"><h3>Iskak Widi Hardono, S.Pd.SD</h3><p>Kepala Sekolah</p></div>
 <div class="card"><h3>Murdiyatun, S.Pd</h3><p>Guru Kelas 1 A</p></div>
 <div class="card"><h3>Dias Astuti Cakrawati, S.Pd</h3><p>Guru Kelas 1 B</p></div>
@@ -161,19 +212,7 @@ button {
 <div class="card"><h3>Deasy Kurniawati, S.Pd</h3><p>Guru Kelas 5B</p></div>
 <div class="card"><h3>Catur Rahayu Septyarini, S.Pd</h3><p>Guru Kelas 6A</p></div>
 <div class="card"><h3>Nuraini Dyah Ayu Yulianti, S.Pd</h3><p>Guru Kelas 6B</p></div>
-<div class="card"><h3>Rina, S.Pd</h3><p>Guru Kelas 3</p></div>
-</div>
-</div>
-</section>
 
-<section id="galeri">
-<div class="container">
-<h2>Galeri Kegiatan</h2>
-<div class="grid">
-<div class="card">Lomba 17 Agustus</div>
-<div class="card">Upacara Bendera</div>
-<div class="card">Kegiatan Pramuka</div>
-<div class="card">Wisuda Siswa</div>
 </div>
 </div>
 </section>
@@ -181,13 +220,15 @@ button {
 <section id="berita">
 <div class="container">
 <h2>Berita Terbaru</h2>
+<div class="grid">
 <div class="card">
 <h3>Peringatan Hari Guru</h3>
 <p>Siswa memberikan kejutan spesial untuk para guru tercinta.</p>
 </div>
 <div class="card">
 <h3>Lomba Sains</h3>
-<p>Siswa SD Maju Jaya meraih juara tingkat kota.</p>
+<p>Siswa meraih juara tingkat kota dan membawa nama baik sekolah.</p>
+</div>
 </div>
 </div>
 </section>
@@ -195,6 +236,7 @@ button {
 <section id="ppdb">
 <div class="container">
 <h2>PPDB Online</h2>
+<div class="card">
 <form>
 <input type="text" placeholder="Nama Lengkap" required>
 <input type="text" placeholder="Tempat, Tanggal Lahir" required>
@@ -206,15 +248,19 @@ button {
 <br>
 <a class="btn" href="#">Download Formulir PDF</a>
 </div>
+</div>
 </section>
 
 <section id="kontak">
 <div class="container">
 <h2>Kontak Kami</h2>
-<p>Alamat: Jl. RA Kartini No 22A Pati Kec.Pati Kab.Pati Jawa Tengah</p>
-<p>Email: patilorsijipaloji@gmail.com</p>
-<p>Telepon: (0295) 383439</p>
+<div class="card">
+<p><strong>Alamat:</strong> Jl. RA Kartini No 22A Pati, Jawa Tengah</p>
+<p><strong>Email:</strong> patilorsijipaloji@gmail.com</p>
+<p><strong>Telepon:</strong> (0295) 383439</p>
+<br>
 <a class="btn" href="https://wa.me/628123456789" target="_blank">Chat via WhatsApp</a>
+</div>
 </div>
 </section>
 
@@ -224,7 +270,3 @@ button {
 
 </body>
 </html>
-
-
-
-
