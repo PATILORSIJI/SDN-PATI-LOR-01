@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SD Negeri Maju Jaya</title>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f8fb;
+}
+
+header {
+    background: #1e88e5;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background: #1565c0;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    color: #1565c0;
+}
+
+.btn {
+    background: #1e88e5;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.grid .card {
+    flex: 1 1 250px;
+}
+
+footer {
+    background: #1565c0;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 10px 0;
+}
+
+button {
+    background: #1e88e5;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media(max-width:768px){
+    .grid{
+        flex-direction: column;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>SD NEGERI MAJU JAYA</h1>
+<p>Mendidik Generasi Cerdas dan Berakhlak Mulia</p>
+</header>
+
+<nav>
+<a href="#beranda">Beranda</a>
+<a href="#profil">Profil</a>
+<a href="#guru">Guru</a>
+<a href="#galeri">Galeri</a>
+<a href="#berita">Berita</a>
+<a href="#ppdb">PPDB</a>
+<a href="#kontak">Kontak</a>
+</nav>
+
+<section id="beranda">
+<div class="container">
+<h2>Selamat Datang</h2>
+<p>Website resmi SD Negeri Maju Jaya. Kami berkomitmen memberikan pendidikan terbaik untuk masa depan anak bangsa.</p>
+<a class="btn" href="#ppdb">Daftar PPDB Sekarang</a>
+</div>
+</section>
+
+<section id="profil">
+<div class="container">
+<h2>Profil Sekolah</h2>
+<p><strong>Sejarah:</strong> SD Negeri Maju Jaya berdiri sejak tahun 1990 dan telah meluluskan ribuan siswa berprestasi.</p>
+<p><strong>Visi:</strong> Menjadi sekolah unggul dalam prestasi dan karakter.</p>
+<p><strong>Misi:</strong></p>
+<ul>
+<li>Meningkatkan kualitas pembelajaran</li>
+<li>Mengembangkan karakter siswa</li>
+<li>Meningkatkan kompetensi guru</li>
+</ul>
+</div>
+</section>
+
+<section id="guru">
+<div class="container">
+<h2>Guru & Staff</h2>
+<div class="grid">
+<div class="card"><h3>Ahmad, S.Pd</h3><p>Kepala Sekolah</p></div>
+<div class="card"><h3>Siti, S.Pd</h3><p>Guru Kelas 1</p></div>
+<div class="card"><h3>Budi, S.Pd</h3><p>Guru Kelas 2</p></div>
+<div class="card"><h3>Rina, S.Pd</h3><p>Guru Kelas 3</p></div>
+</div>
+</div>
+</section>
+
+<section id="galeri">
+<div class="container">
+<h2>Galeri Kegiatan</h2>
+<div class="grid">
+<div class="card">Lomba 17 Agustus</div>
+<div class="card">Upacara Bendera</div>
+<div class="card">Kegiatan Pramuka</div>
+<div class="card">Wisuda Siswa</div>
+</div>
+</div>
+</section>
+
+<section id="berita">
+<div class="container">
+<h2>Berita Terbaru</h2>
+<div class="card">
+<h3>Peringatan Hari Guru</h3>
+<p>Siswa memberikan kejutan spesial untuk para guru tercinta.</p>
+</div>
+<div class="card">
+<h3>Lomba Sains</h3>
+<p>Siswa SD Maju Jaya meraih juara tingkat kota.</p>
+</div>
+</div>
+</section>
+
+<section id="ppdb">
+<div class="container">
+<h2>PPDB Online</h2>
+<form>
+<input type="text" placeholder="Nama Lengkap" required>
+<input type="text" placeholder="Tempat, Tanggal Lahir" required>
+<input type="text" placeholder="Nama Orang Tua" required>
+<input type="tel" placeholder="No. HP" required>
+<textarea placeholder="Alamat" required></textarea>
+<button type="submit">Kirim Pendaftaran</button>
+</form>
+<br>
+<a class="btn" href="#">Download Formulir PDF</a>
+</div>
+</section>
+
+<section id="kontak">
+<div class="container">
+<h2>Kontak Kami</h2>
+<p>Alamat: Jl. Pendidikan No. 123, Kota Maju</p>
+<p>Email: info@sdmajujaya.sch.id</p>
+<p>Telepon: 08123456789</p>
+<a class="btn" href="https://wa.me/628123456789" target="_blank">Chat via WhatsApp</a>
+</div>
+</section>
+
+<footer>
+<p>&copy; 2026 SD Negeri Maju Jaya - All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
